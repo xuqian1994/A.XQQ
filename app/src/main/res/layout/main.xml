@@ -8,9 +8,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pf.xqq.Main">
+    <WebView
+        android:id="@+id/xwv_new_show_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <com.jcodecraeer.xrecyclerview.XRecyclerView
         android:id="@+id/xrv_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
+
