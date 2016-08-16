@@ -31,9 +31,10 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * 写在最前面：倩倩想你了。
+ * 写在最前面：让我欢喜让我忧。
  *
- * 该项目主要用于和倩倩在Github上的协同开发。
+ * 其实你对我有一点点动心了，为什么要这样啊。
+ *
  * */
 public class Main extends AppCompatActivity {
 
