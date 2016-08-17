@@ -1,5 +1,6 @@
 package pf.xqq;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.http.SslError;
 import android.os.Handler;
@@ -25,6 +26,7 @@ import pf.xqq.adapter.AdapterMain;
 import pf.xqq.rxjava.RxVideoTime;
 import pf.xqq.rxjava.RxVideoTime2;
 import pf.xqq.rxjava.post;
+import pf.xqq.unvideo.MainVideo;
 import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
@@ -42,106 +44,22 @@ public class Main extends AppCompatActivity {
 
     private XRecyclerView mXRView;
     private AdapterMain mAdapter;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-//        initView();
-        initview2();
+        initView();
+//        initview2();
     }
 
     private void initview2() {
         String url="http://60.205.95.148/xxpt/?q=course_module_items/page/592&username=13718143756&token=3d10ce8b1d932ad89ea530e0c2042598";
-
-
-        WebView webView = (WebView) findViewById(R.id.xwv_new_show_web);
-
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-//		webSettings.setDomStorageEnabled(true);
-        webSettings.setUseWideViewPort(true);
-        webSettings.setSupportZoom(true);
-        webView.loadUrl(url);
-        webView.setWebViewClient(new MyWebViewClient());
-//        webView.setDownloadListener(new MyWebViewDownLoadListener());
     }
 
 
-    private class MyWebViewClient extends WebViewClient {
 
-        @Override
-        public void onPageFinished(WebView view, String url) {
-//            waitingBar.setVisibility(View.GONE);
-            super.onPageFinished(view, url);
-        }
-
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            super.onPageStarted(view, url, favicon);
-        }
-
-        @Override
-        public void onReceivedSslError(WebView view, SslErrorHandler handler,
-                                       SslError error) {
-            super.onReceivedSslError(view, handler, error);
-        }
-
-        // 在点击请求的是链接是才会调用，重写此方法返回true表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边。
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-
-            Log.e("QT","点击的连接："+url);
-            //http://60.205.95.148/xxpt/sites/default/files/res0/u10645/video.mp4?vid=8620&is_resource=0
-
-            if(url.contains("?")){
-                String vid =url.substring(url.indexOf("=")+1, url.lastIndexOf("&"));
-//				ALog.e("截取vid--->"+vid);
-                String is_resource =url.substring(url.lastIndexOf("=")+1, url.length());
-//				vid=is_resource.substring(4, is_resource.indexOf("&"));
-//                ALog.e("截取vid--->"+vid);
-//                ALog.e("截取is_resource--->"+is_resource);
-
-//                initRxVideoInfo(deURL,vid,is_resource,course_id);
-            }
-            if(url.startsWith("intent://")){
-                return true;
-            }
-//            super.shouldOverrideUrlLoading(view, url);
-            if (TextUtils.isEmpty(url)){
-                return true;
-            }
-
-            initRxVideoInfo(deURL,"","",course_id);
-//            new Thread(new Runnable() {
-//
-//                @Override
-//                public void run() {
-//                        new post().loginByPost();
-//                }
-//            }).start();
-            return true;//super.shouldOverrideUrlLoading(view, url);
-        }
-    }
-
-    private Subscription subscription;
-    private String course_id;
-    private String deURL;
-    private void initRxVideoInfo(String deURL, String vid, String is_resource, String course_id) {
-        subscription = new RxVideoTime2(deURL,vid,is_resource,course_id).getGistObservable()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<String>() {
-
-                    @Override
-                    public void onCompleted() {}
-
-                    @Override
-                    public void onError(Throwable e) {}
-
-                    @Override
-                    public void onNext(String gist) {}});
-    }
     private void initView() {
         mXRView = (XRecyclerView) findViewById(R.id.xrv_main);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -204,12 +122,11 @@ public class Main extends AppCompatActivity {
         mXRView.refreshComplete();
     }
 
-
     public void onClickItem(String str) {
-//		switch (str.substring(1, 2)) {
-//			case "1":
-//				intent = new Intent(MainActivity.this, FirstActivity.class);
-//				break;
+		switch (str.substring(1, 2)) {
+			case "1":
+				intent = new Intent(Main.this, MainVideo.class);
+				break;
 //			case "2":
 //				intent = new Intent(MainActivity.this, ShowRx.class);
 //				break;
@@ -225,7 +142,7 @@ public class Main extends AppCompatActivity {
 //			case "6":
 //				intent = new Intent(MainActivity.this, NoteActivity.class);
 //				break;
-//		}
-//		startActivity(intent);
+		}
+		startActivity(intent);
     }
 }

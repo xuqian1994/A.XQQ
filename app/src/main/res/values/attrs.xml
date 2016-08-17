@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 带有数字的进度条 -->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- SlidingMenu -->
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- 视差头部-视频播放 -->
+    <declare-styleable name="CustomSlidingTabIndicator">
+        <attr name="STIindicatorColor" format="color" />
+        <attr name="STIunderlineColor" format="color" />
+        <attr name="STIdividerColor" format="color" />
+        <attr name="STItextColor" format="color" />
+        <attr name="STIindicatorHeight" format="dimension" />
+        <attr name="STIunderlineHeight" format="dimension" />
+        <attr name="STIdividersPadding" format="dimension" />
+        <attr name="STItabLeftRightPadding" format="dimension" />
+        <attr name="STIscrollOffSet" format="dimension" />
+        <attr name="STItabTextSize" format="dimension" />
+        <attr name="STItabBackground" format="reference" />
+        <attr name="STIshouldExpand" format="boolean" />
+        <attr name="STItextCaps" format="boolean" />
+        <attr name="STItabTopBtmPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" format="color" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="tabBackgroundTextViewId" format="reference" />
+    </declare-styleable>
+
+    <!-- Loading 页面 -->
+    <declare-styleable name="WaterView">
+        <attr name="WaterView_src" format="reference" />
+        <attr name="WaterView_speed" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FlameView">
+        <attr name="FlameView_flameNum" format="integer" />
+    </declare-styleable>
+
+    <!-- hightlight 高亮 页面 -->
+    <attr name="highlight" format="boolean"></attr>
+
+    <!-- 微信 视频 -->
+
+    <declare-styleable name="MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="video_width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="video_height" format="integer" />
+    </declare-styleable>
+   <declare-styleable name="CustomTheme_gifViewStyle">
+        </declare-styleable>
+</resources>
