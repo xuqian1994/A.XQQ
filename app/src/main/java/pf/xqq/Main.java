@@ -33,9 +33,13 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
- * 写在最前面：让我欢喜让我忧。
+ * 写在最前面：想你
  *
- * 其实你对我有一点点动心了，为什么要这样啊。
+ *
+ *
+ * 今天去买车，看中一辆三万块的，这时销售员过来说：“三万都花了，不如再加点钱，档次堪比百万豪车。”
+ *“加多少？”
+ *“加97万。”
  *
  * */
 public class Main extends AppCompatActivity {
