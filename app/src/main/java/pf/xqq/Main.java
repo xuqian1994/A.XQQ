@@ -1,36 +1,19 @@
 package pf.xqq;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.http.SslError;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
-import android.webkit.SslErrorHandler;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.RunnableFuture;
 
 import pf.xqq.adapter.AdapterMain;
-import pf.xqq.rxjava.RxVideoTime;
-import pf.xqq.rxjava.RxVideoTime2;
-import pf.xqq.rxjava.post;
 import pf.xqq.unvideo.MainVideo;
-import rx.Subscriber;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 /**
  * 写在最前面：想你
