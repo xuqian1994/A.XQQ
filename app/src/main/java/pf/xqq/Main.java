@@ -25,14 +25,11 @@ import pf.xqq.unvideo.MainVideo;
  *“加97万。”
  *
  * pf:2016 8-18 14:45 说：我现在只是新增了这么一行文字。
-<<<<<<< HEAD
  * qq:2016 8-18 17:50 说：我只想试试。
-=======
  *
  *
  * noname:16:53   add des
  * noname:17：03   add des2
->>>>>>> android-pf/master
  * */
 public class Main extends AppCompatActivity {
 
