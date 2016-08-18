@@ -1,13 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-<<<<<<< HEAD
+
     compileSdkVersion 24
     buildToolsVersion "23.0.2"
-=======
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
->>>>>>> android-pf/master
+
 
     defaultConfig {
         applicationId "pf.xqq"
