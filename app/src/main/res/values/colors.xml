@@ -3,4 +3,128 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!-- 任务 -->
+
+
+    <drawable name="c_task_01">#acacac</drawable>
+
+    <!-- 灰色 -->
+
+
+    <drawable name="c_task_02">#fe8a00</drawable>
+
+    <!-- 黄色 -->
+
+
+    <drawable name="c_task_03">#2a98c8</drawable>
+
+    <!-- 蓝色 -->
+
+
+    <drawable name="c_task_04">#FFFF00</drawable>
+
+    <!-- -->
+
+
+    <!-- 任务 -->
+
+
+    <color name="color_999">#999</color>
+
+    <color name="color_666">#666</color>
+
+    <color name="color_333">#333</color>
+
+    <!-- -->
+
+
+    <color name="devide_line">#CBCED2</color>
+
+    <color name="blue">#499BF7</color>
+
+    <!-- -->
+
+
+    <color name="blue_01">#74bee1</color>
+
+    <color name="white">#ffffff</color>
+
+    <!-- dialog方面 -->
+
+
+    <!-- 提示框的背景色 -->
+
+
+    <color name="background_color_black">#bb000000</color>
+
+    <color name="transparent_background">#00000000</color>
+
+    <!-- 提示框的背景色 -->
+
+
+    <color name="background_color_green">#e56bbe7a</color>
+
+    <color name="background_color_blue">#e553c5f8</color>
+
+    <color name="background_color_pink">#e5E7b8f1</color>
+
+    <color name="background_color_yellow">#e5d29b36</color>
+
+    <color name="background_color_brown">#e54c2316</color>
+
+    <color name="outside_color_trans">#00000000</color>
+
+    <color name="outside_color_gray">#66444444</color>
+
+    <color name="outside_color_pink">#66E7b8f1</color>
+
+    <!-- 下载相关 -->
+
+
+    <color name="black">#000000</color>
+
+    <color name="gray_1">#969696</color>
+
+    <color name="gray_2">#DCDCDC</color>
+
+    <color name="gray_3">#787878</color>
+
+    <color name="tab_text_gray">#FF808080</color>
+
+    <!-- 视差头部相关 -->
+
+
+    <color name="theme_color">#33BBFF</color>
+
+    <!-- 九宫格 -->
+
+
+    <color name="commo_text_color">#ff333333</color>
+
+    <color name="line">#ffd3dde6</color>
+
+    <!-- 轮播 -->
+
+
+    <color name="d_user">#2F710B</color>
+
+    <color name="e_name">#DDDDDD</color>
+
+
+
+    <color name="theme_accent">@color/colorAccent</color>
+
+    <!-- 播放器 -->
+
+
+    <color name="uvv_green">#ff50b100</color>
+
+    <color name="uvv_black">#ff000000</color>
+
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+
+    <color name="uvv_gray">#ffbbbbbb</color>
+
+    <color name="uvv_titlebar_bg">#7f000000</color>
+
 </resources>
